@@ -1,0 +1,37 @@
+# Laravel specific ignore rules for the subdirectory
+src/ListenUp/.env
+src/ListenUp/.env.backup
+src/ListenUp/.env.production
+src/ListenUp/vendor/
+src/ListenUp/node_modules/
+src/ListenUp/public/storage
+src/ListenUp/public/build
+src/ListenUp/public/hot
+src/ListenUp/storage/*.key
+src/ListenUp/.phpunit.result.cache
+src/ListenUp/Homestead.json
+src/ListenUp/Homestead.yaml
+src/ListenUp/auth.json
+src/ListenUp/npm-debug.log
+src/ListenUp/yarn-error.log
+src/ListenUp/.fleet/
+src/ListenUp/.idea/
+src/ListenUp/.vscode/
+
+# Python / FastAPI specific rules
+src/ListenUp/CA/venv/
+src/ListenUp/CA/__pycache__/
+*.pyc
+
+# Large Files (GitHub has a strict limit of 100MB per file)
+src/DEMO.mp4
+*.mp4
+*.zip
+*.rar
+*.tar.gz
+
+# System / Editor files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

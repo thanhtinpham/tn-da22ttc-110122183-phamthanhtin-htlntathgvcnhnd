@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI English Text to Speech & IPA</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <div class="container">
+        <header>
+            <h1>AI Voice <span class="gradient-text">& IPA</span></h1>
+            <p>Convert English text to natural speech and IPA phonemes</p>
+        </header>
+
+        <main class="glass-card">
+            <div class="input-section">
+                <textarea id="text-input" placeholder="Enter English text here... (e.g., Hello, how are you?)"></textarea>
+                <button id="generate-btn">
+                    <span class="btn-text">Generate</span>
+                    <div class="loader" id="loader"></div>
+                </button>
+            </div>
+
+            <div id="result-section" class="result-section hidden">
+                <div class="ipa-container">
+                    <h3>Phonetic (IPA)</h3>
+                    <div class="ipa-box">
+                        <span id="ipa-output" style="white-space: pre-line;"></span>
+                        <button id="copy-ipa" title="Copy to clipboard">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="audio-container">
+                    <h3>Audio Player</h3>
+                    <audio id="audio-player" controls></audio>
+                    <div class="audio-actions">
+                        <a id="download-btn" href="#" download class="secondary-btn">
+                            <i class="fas fa-download"></i> Download MP3
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 AI Phonetics Lab • Modern Speech Synthesis</p>
+        </footer>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

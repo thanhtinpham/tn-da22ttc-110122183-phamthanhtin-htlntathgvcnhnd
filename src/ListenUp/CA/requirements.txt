@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+jinja2
+gTTS
+eng_to_ipa
+python-multipart
+google-generativeai
